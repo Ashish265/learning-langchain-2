@@ -5,3 +5,5 @@ matplotlib
 crewai
 pre-commit
 tensorflow
+langchain-openai
+langchain

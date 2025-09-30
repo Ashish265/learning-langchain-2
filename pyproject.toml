@@ -1,0 +1,19 @@
+[project]
+name = "learning-langchain-2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ashish265",email = "ashishgupta2692@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-openai (>=0.3.33,<0.4.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
