@@ -10,7 +10,12 @@ requires-python = ">=3.12,<4.0"
 dependencies = [
     "langchain (>=0.3.27,<0.4.0)",
     "langchain-openai (>=0.3.33,<0.4.0)",
-    "dotenv (>=0.9.9,<0.10.0)"
+    "dotenv (>=0.9.9,<0.10.0)",
+    "community (>=1.0.0b1,<2.0.0)",
+    "langchain-community (>=0.3.30,<0.4.0)",
+    "beautifulsoup4 (>=4.14.2,<5.0.0)",
+    "pypdf (>=6.1.1,<7.0.0)",
+    "langchain-postgres (>=0.0.15,<0.0.16)"
 ]
 
 
