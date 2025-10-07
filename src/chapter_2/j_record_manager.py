@@ -2,9 +2,12 @@ from langchain.indexes import SQLRecordManager, index
 from langchain_postgres.vectorstores import PGVector
 from langchain_openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
+from dotenv import load_dotenv
+
+load_dotenv()
 
 prefix = 'postgresql+psycopg'
-sufix = 'langchain:langchain@localhost:6024/langchain'
+sufix = 'langchain:langchain@host.docker.internal:6024/langchain'
 
 # See docker command above to launch a postgres instance with pgvector enabled.
 connection = "://".join([prefix, sufix])
@@ -21,7 +24,7 @@ vectorstore = PGVector(
 
 record_manager = SQLRecordManager(
     namespace,
-    db_url="postgresql+psycopg://langchain:langchain@localhost:6024/langchain",
+    db_url="://".join([prefix, sufix]),
 )
 
 # Create the schema if it doesn't exist

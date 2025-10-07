@@ -9,7 +9,7 @@ import uuid
 load_dotenv()
 
 prefix = 'postgresql+psycopg'
-sufix = 'langchain:langchain@localhost:6024/langchain'
+sufix = 'langchain:langchain@host.docker.internal:6024/langchain'
 
 # See docker command above to launch a postgres instance with pgvector enabled.
 connection = "://".join([prefix, sufix])
