@@ -61,7 +61,7 @@ llm = ChatOpenAI()
 print("\nRewrite the query to improve accuracy\n")
 
 rewrite_prompt = ChatPromptTemplate.from_template(
-    """Provide a better search query for 
+    """Provide a better search query for
     web search engine to answer the given question,
       end the queries with '**'.
         Question: {x} Answer:""")
