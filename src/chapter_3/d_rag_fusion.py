@@ -89,11 +89,11 @@ print("retrieved context using rank fusion: ", result[0].page_content)
 print("\n\n")
 
 prompt = ChatPromptTemplate.from_template(
-    """Answer the question based only 
+    """Answer the question based only
     on the following context: {context} Question: {question} """
 )
 
-query = """Who are the some important yet not 
+query = """Who are the some important yet not
 well known philosophers in the ancient greek history of philosophy?"""
 
 
