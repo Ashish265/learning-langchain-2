@@ -47,7 +47,7 @@ docs = [
         metadata={"year": 1995, "genre": "animated"},
     ),
     Document(
-        page_content="""Three men walk into the Zone, 
+        page_content="""Three men walk into the Zone,
         three men walk out of the Zone""",
         metadata={
             "year": 1979,
