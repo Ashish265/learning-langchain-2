@@ -24,7 +24,7 @@ messages = [
         have the same ring to it!'''
     ),
     AIMessage(
-        content="""Why, he's probably chasing after 
+        content="""Why, he's probably chasing after
         the last cup of coffee in the office!"""
     ),
 ]
