@@ -10,7 +10,7 @@ load_dotenv()
 
 class State(TypedDict):
     messages: Annotated[list, add_messages]
-    
+
 
 builder = StateGraph(State)
 
